@@ -1,0 +1,71 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
+      <div class="header ">
+        <!-- START MOBILE CONTROLS -->
+        <!-- LEFT SIDE -->
+        <div class="pull-left full-height visible-sm visible-xs">
+          <!-- START ACTION BAR -->
+          <div class="sm-action-bar">
+            <a href="#" class="btn-link toggle-sidebar" data-toggle="sidebar">
+              <span class="icon-set menu-hambuger"></span>
+            </a>
+          </div>
+          <!-- END ACTION BAR -->
+        </div>
+        <!-- RIGHT SIDE -->
+        <div class="pull-right full-height visible-sm visible-xs">
+          <!-- START ACTION BAR -->
+          <div class="sm-action-bar">
+            <a href="#" class="btn-link" data-toggle="quickview" data-toggle-element="#quickview">
+              <span class="icon-set menu-hambuger-plus"></span>
+            </a>
+          </div>
+          <!-- END ACTION BAR -->
+        </div>
+        <!-- END MOBILE CONTROLS -->
+        <div class=" pull-left sm-table">
+          <div class="header-inner">
+            <div class="brand inline">
+              <a href="../"><img src="${pageContext.request.contextPath}/resources/assets/img/logo.png" alt="logo" data-src="${pageContext.request.contextPath}/resources/assets/img/logo.png" data-src-retina="${pageContext.request.contextPath}/resources/assets/img/logo_2x.png" width="78" height="22"></a>
+            </div>
+            <!-- START NOTIFICATION LIST -->
+            <ul class="notification-list no-margin hidden-sm hidden-xs b-grey b-l b-r no-style p-l-30 p-r-20">
+              <li class="p-r-15 inline">
+                <div class="dropdown">
+                  <a href="javascript:;" id="notification-center" class="icon-set globe-fill" data-toggle="dropdown">
+                    <span class="bubble"></span>
+                  </a>
+                  <!-- START Notification Dropdown -->
+               
+                </div>
+              </li>
+              <li class="p-r-15 inline">
+                <a href="#" class="icon-set clip "></a>
+              </li>
+              <li class="p-r-15 inline">
+                <a href="#" class="icon-set grid-box"></a>
+              </li>
+            </ul>
+            <!-- END NOTIFICATIONS LIST -->
+            <a href="#" class="search-link" data-toggle="search"><i class="pg-search"></i>Type anywhere to <span class="bold">search</span></a> </div>
+        </div>
+        <div class=" pull-right">
+          <div class="header-inner">
+            <a href="${pageContext.request.contextPath}/logout" class="btn-link icon-set menu-hambuger-plus m-l-20"></a>
+          </div>
+        </div>
+        <div class=" pull-right">
+          <!-- START User Info-->
+          <div class="visible-lg visible-md m-t-10">
+            <div class="pull-left p-r-10 p-t-10 fs-16 font-heading">
+              <span class="semi-bold">
+		<sec:authentication property="name" />
+		<sec:authentication property="authorities" /></span>
+            </div>
+            <div class="thumbnail-wrapper d32 circular inline m-t-5">
+              <img src="${pageContext.request.contextPath}/resources/assets/img/profiles/avatar.jpg" alt="" data-src="${pageContext.request.contextPath}/resources/assets/img/profiles/avatar.jpg" data-src-retina="${pageContext.request.contextPath}/resources/assets/img/profiles/avatar_small2x.jpg" width="32" height="32">
+            </div>
+          </div>
+          <!-- END User Info-->
+        </div>
+      </div>

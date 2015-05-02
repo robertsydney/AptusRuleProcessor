@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JRStudent" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="61614536-b946-46a8-9748-30f44641ab4a">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="assignedName" class="java.lang.String"/>
+	<field name="siteName" class="java.lang.String"/>
+	<field name="buildingName" class="java.lang.String"/>
+	<field name="floorName" class="java.lang.String"/>
+	<field name="wingName" class="java.lang.String"/>
+	<field name="roomNumber" class="java.lang.String"/>
+	<field name="sNo" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50">
+			<staticText>
+				<reportElement x="161" y="0" width="234" height="41" uuid="cc3b69f3-08ee-460d-9774-3b030225c8d0"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Location of Devices]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="23" forecolor="#10CFBD" backcolor="#10CFBD" uuid="6dbd1c1e-a5a3-4e44-9ccb-b1969836c3e9"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="10" y="3" width="34" height="20" uuid="4fe78be5-4748-4200-a2ab-99230e2b6f0d"/>
+				<textElement>
+					<font size="10" isBold="true"/>
+				</textElement>
+				<text><![CDATA[S.No.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="44" y="3" width="71" height="20" uuid="f43d98eb-024e-417e-bce9-f27dc1fa0c66"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Device Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="125" y="3" width="67" height="20" uuid="d9b8f0b9-9082-46ec-91d0-b71e2bfdf4f2"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Site Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="199" y="3" width="78" height="20" uuid="f899db5a-aada-4b75-aafa-a8a87717aa76"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[BuildingName]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="292" y="4" width="76" height="20" uuid="73882d11-f7d9-43d1-8ab7-ab77e84d34f3"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Floor Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="382" y="3" width="62" height="20" uuid="74937927-3509-4a3a-87a0-1ef381ff138d"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Wing Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="464" y="4" width="76" height="20" uuid="9bc817f3-d616-41c1-baa4-adab1fb440eb"/>
+				<textElement>
+					<font isBold="true"/>
+				</textElement>
+				<text><![CDATA[Room Numnber]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="29" splitType="Stretch">
+			<textField>
+				<reportElement x="53" y="2" width="57" height="20" uuid="bd47392d-006b-4548-8d85-b758ab74193a"/>
+				<textFieldExpression><![CDATA[$F{assignedName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="124" y="2" width="67" height="20" uuid="255db21e-c50d-410c-90a5-c3972dd45fb7"/>
+				<textFieldExpression><![CDATA[$F{siteName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="205" y="2" width="53" height="20" uuid="d235217d-b747-4065-9549-93af576b4704"/>
+				<textFieldExpression><![CDATA[$F{buildingName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="292" y="2" width="76" height="20" uuid="2a899a8d-3b30-4bef-8f25-b57e225a1d21"/>
+				<textFieldExpression><![CDATA[$F{floorName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="376" y="2" width="63" height="20" uuid="7e3853f1-b0a1-4bf1-a8d1-e12a0a674f22"/>
+				<textFieldExpression><![CDATA[$F{wingName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="464" y="2" width="76" height="20" uuid="14972304-527e-40ca-9839-e034c0306b95"/>
+				<textFieldExpression><![CDATA[$F{roomNumber}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="554" y="0" width="1" height="29" forecolor="#10CFBD" uuid="a7fe5b42-4e2a-4edc-b339-0bf096d0e1a5"/>
+			</line>
+			<line>
+				<reportElement x="453" y="0" width="1" height="29" forecolor="#10CFBD" uuid="c2113264-401c-4d34-a651-3146343426e1"/>
+			</line>
+			<line>
+				<reportElement x="370" y="0" width="1" height="29" forecolor="#10CFBD" uuid="2c7b9d8c-5c42-439a-8966-8c9c37f30636"/>
+			</line>
+			<line>
+				<reportElement x="280" y="0" width="1" height="29" forecolor="#10CFBD" uuid="404f5827-b790-4567-8716-982541e3f467"/>
+			</line>
+			<line>
+				<reportElement x="196" y="0" width="1" height="29" forecolor="#10CFBD" uuid="f8cb8a95-6f41-49a1-b26b-4bf2b9b3f6a1"/>
+			</line>
+			<line>
+				<reportElement x="114" y="0" width="1" height="29" forecolor="#10CFBD" uuid="c0ac021a-e6da-4314-9aa9-a5efc5b54ae5"/>
+			</line>
+			<line>
+				<reportElement x="41" y="0" width="1" height="29" forecolor="#10CFBD" uuid="f3d92dec-a312-4929-96d6-276f53ec9446"/>
+			</line>
+			<line>
+				<reportElement x="0" y="0" width="1" height="29" forecolor="#10CFBD" uuid="2a56fccc-c7c8-4f31-94d0-3cc178ae7345"/>
+			</line>
+			<line>
+				<reportElement x="0" y="28" width="554" height="1" forecolor="#10CFBD" uuid="3c066749-c778-44be-aa2e-06468a04e2ad"/>
+			</line>
+			<textField>
+				<reportElement x="10" y="2" width="15" height="20" uuid="cb8ef892-3cb8-4fba-baef-929a6c98edcd"/>
+				<textFieldExpression><![CDATA[$F{sNo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

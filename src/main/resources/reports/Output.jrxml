@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JRStudent" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="1640c17c-5232-4ae2-899f-bfce1f3b52dc">
+	<property name="ireport.zoom" value="2.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="48"/>
+	<field name="assignedName" class="java.lang.String"/>
+	<field name="longMsg" class="java.lang.String"/>
+	<field name="sNo" class="java.lang.String"/>
+	<field name="shortMsg" class="java.lang.String"/>
+	<field name="cancelMsg" class="java.lang.String"/>
+	<field name="ack" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="50">
+			<staticText>
+				<reportElement x="115" y="0" width="328" height="41" uuid="35fb5d36-3c10-4143-955b-de7a17e8eb2d"/>
+				<textElement textAlignment="Justified">
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Output Device Configuration]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="24" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="23" forecolor="#10CFBD" backcolor="#10CFBD" uuid="c6e65a4e-4727-42cf-8929-64d8621e04a5"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="11" y="0" width="33" height="20" uuid="d934b859-8ce5-4604-9a13-7fe1523fc222"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[S.No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="62" y="0" width="100" height="20" uuid="e9d3ae32-91a8-41e1-baf3-eb869d814831"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Device Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="175" y="0" width="75" height="20" uuid="a1f83338-d7d6-48b0-9e2e-575025a2770c"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Long Msg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="269" y="0" width="74" height="20" uuid="bd8daf90-deee-4d2b-9365-f02156ef0044"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Short Msg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="367" y="0" width="81" height="20" uuid="53ff6575-321e-4033-90ec-ecb8d5f102a6"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[CancelMsg]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="465" y="0" width="78" height="20" uuid="bdf3d14b-2c72-45da-a513-ffd72001acb9"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[ACK]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="24" splitType="Stretch">
+			<textField>
+				<reportElement x="62" y="0" width="100" height="20" uuid="be7443b9-baaf-4569-bee2-cb9d635e9912"/>
+				<textFieldExpression><![CDATA[$F{assignedName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="175" y="0" width="75" height="20" uuid="613fd4b6-9e6d-424d-b024-df8a464380c6"/>
+				<textFieldExpression><![CDATA[$F{longMsg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="269" y="0" width="74" height="20" uuid="e9452051-8793-4077-80db-3105e3de854a"/>
+				<textFieldExpression><![CDATA[$F{shortMsg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="367" y="0" width="81" height="20" uuid="a3fdbbc1-bc8d-4e4a-8279-42673f04d507"/>
+				<textFieldExpression><![CDATA[$F{cancelMsg}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="465" y="0" width="78" height="20" uuid="f11b8b65-8521-4a77-9d98-46ae50810e80"/>
+				<textFieldExpression><![CDATA[$F{ack}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="554" y="-4" width="1" height="28" forecolor="#10CFBD" uuid="de38d5b8-2f14-4f0b-8b8d-772a7d9f8356"/>
+			</line>
+			<line>
+				<reportElement x="456" y="0" width="1" height="24" forecolor="#10CFBD" uuid="f4d893ca-59ec-44cf-b341-5884c7d86cb3"/>
+			</line>
+			<line>
+				<reportElement x="354" y="-1" width="1" height="25" forecolor="#10CFBD" uuid="e7abe309-81fa-4c38-a4d6-24f90c98fcdd"/>
+			</line>
+			<line>
+				<reportElement x="254" y="-4" width="1" height="28" forecolor="#10CFBD" uuid="094b65fa-9c64-4a7b-8190-165e2bd26851"/>
+			</line>
+			<line>
+				<reportElement x="167" y="-4" width="1" height="28" forecolor="#10CFBD" uuid="adc730e0-fea6-432b-b590-6290d1c57dcc"/>
+			</line>
+			<line>
+				<reportElement x="56" y="-4" width="1" height="28" forecolor="#10CFBD" uuid="a2273903-160f-45a1-a78e-90c279e82f96"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-1" width="1" height="25" forecolor="#10CFBD" uuid="e381b997-3c5b-44c1-a87c-5a6d869567d3"/>
+			</line>
+			<textField>
+				<reportElement x="12" y="3" width="32" height="20" uuid="dc59b995-d2df-42af-9488-31ddefbb0c5f"/>
+				<textFieldExpression><![CDATA[$F{sNo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="0" y="23" width="554" height="1" forecolor="#10CFBD" uuid="03a88e77-c688-4238-85dd-fb25c765cea0"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

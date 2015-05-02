@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="JRStudent" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="687a7eb7-fdc2-4f0b-96e5-5c76fe6ad4aa">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="sNo" class="java.lang.String"/>
+	<field name="assignedName" class="java.lang.String"/>
+	<field name="eventName" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="39">
+			<staticText>
+				<reportElement x="183" y="0" width="183" height="33" uuid="fa73be38-da21-4b41-8a28-5033bf184f22"/>
+				<textElement>
+					<font size="24" isBold="true"/>
+				</textElement>
+				<text><![CDATA[List Of Devices]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="27" splitType="Stretch">
+			<rectangle>
+				<reportElement x="0" y="0" width="555" height="25" forecolor="#10CFBD" backcolor="#10CFBD" uuid="4747f145-e16c-485f-b5a2-dcd036d7ae95"/>
+			</rectangle>
+			<staticText>
+				<reportElement x="83" y="6" width="100" height="20" uuid="a04f141a-61ba-4545-820e-3e2872f60ca7"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Device Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="16" y="5" width="100" height="20" uuid="ba2a6947-3917-4f22-85b3-2fc5bba5e4ed"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Sr.No]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="356" y="6" width="100" height="20" uuid="a1412c5b-4f43-49ef-a261-b542b5fa9285"/>
+				<textElement>
+					<font size="12" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Event Name]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="28" splitType="Stretch">
+			<textField>
+				<reportElement x="355" y="2" width="100" height="20" uuid="e52b113e-1e66-4c35-b099-87a7a4c949b6"/>
+				<textFieldExpression><![CDATA[$F{eventName}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="275" y="-2" width="1" height="30" forecolor="#10CFBD" uuid="5e2dfe6d-8f7b-4182-b52b-b409039f446d"/>
+			</line>
+			<textField>
+				<reportElement x="83" y="2" width="100" height="20" uuid="5fd8b33a-9247-4087-8db6-0c3c89b4ad38"/>
+				<textFieldExpression><![CDATA[$F{assignedName}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="16" y="2" width="51" height="20" uuid="8814edc9-4e6a-45b4-a5c7-7795dd790812"/>
+				<textFieldExpression><![CDATA[$F{sNo}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement x="74" y="-2" width="1" height="30" forecolor="#10CFBD" uuid="ebf4b636-5801-4944-a564-b4fd8aa5a58a"/>
+			</line>
+			<line>
+				<reportElement x="0" y="-2" width="1" height="30" forecolor="#10CFBD" uuid="8f4a4ee5-3d41-4872-8574-586902a2e0e0"/>
+			</line>
+			<line>
+				<reportElement x="554" y="-2" width="1" height="30" forecolor="#10CFBD" uuid="1c3e14c4-e11d-4aa9-bb53-8470a1d7ee9e"/>
+			</line>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="7" splitType="Stretch"/>
+	</columnFooter>
+</jasperReport>
